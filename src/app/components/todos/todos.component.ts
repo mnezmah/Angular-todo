@@ -23,4 +23,10 @@ export class TodosComponent implements OnInit {
     this.todoService.deleteTodo(todo).subscribe() // todoservice is a file in service folder, and method deleteTodo lives there
   }
 
+  addTodo(todo:Todo) {
+    this.todoService.addTodo().subscribe(todo => {
+      this.todos.push()
+    })
+  }
+
 }
